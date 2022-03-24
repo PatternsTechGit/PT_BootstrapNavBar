@@ -5,7 +5,7 @@ Built into Bootstrap are a number of reusable elements, conveniently styled out 
 
 ### About this exercise
 Previously we have installed the bootstrap and fontawesome in our angular application. 
-> If you want to installed bootstrap and fontawesome in an angular application you can [Click Here](http://https://github.com/PatternsTechGit/PT_Fontawesoome_Bootstrap "Click Here").
+> If you want to install bootstrap and fontawesome in an angular application you can [Click Here](https://github.com/PatternsTechGit/PT_Fontawesoome_Bootstrap "Click Here").
 
 In this lab we will
 - Use Bootstrap navbar component in Angular application.

@@ -12,6 +12,8 @@ In this lab we will
 - Make NavBar responsive and mobile friendly.
 
 ------------
+
+
 #### Step 1: Generating a new Component
 we will generate a new component in app folder using `ng g c` command named toolbar
 
@@ -19,15 +21,19 @@ we will generate a new component in app folder using `ng g c` command named tool
 ng g c toolbar
 ```
 
-![toolbarComponent](https://github.com/PatternsTechGit/PT_AngularCLI/blob/main/images/module_vs_component.png)
+![toolbarComponent](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/toolbarComponent.png)
+
 
 #### Step 2: Declaration of Component in App Module
 After creating the component we have to import our component in the declaration array
 
-![appmodule](https://github.com/PatternsTechGit/PT_AngularCLI/blob/main/images/module_vs_component.png)
+![appmodule](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/appmodule.png)
+
 
 
 #### Step 3: Placing navbar in App Component
+
+
 
 #### Step 4: Desiging Navbar with Bootstrap
 In the `toolbar.component.html` write the following bootstrap code for navBar Component
@@ -37,7 +43,10 @@ In the `toolbar.component.html` write the following bootstrap code for navBar Co
     <div class="container-fluid">
       <a class="navbar-brand" href="#">BBBank</a>
       
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -45,7 +54,8 @@ In the `toolbar.component.html` write the following bootstrap code for navBar Co
         <ul class="navbar-nav me-auto- mb-2 mb-lg-0 ms-5">
 
           <li class="nav-item dropdown d-flex flex-end">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="true">
                 <div class="photo">
                     <img alt="Profile Photo" src="assets/images/profile.jpg" />
                 </div>
@@ -64,6 +74,7 @@ In the `toolbar.component.html` write the following bootstrap code for navBar Co
 ```
 
 
+
 #### Step 5: Styling our NavBar
 In the `styles.css` in src folder, write the following css code for styling the navbar
 ```css
@@ -78,8 +89,6 @@ body {
   text-align: left;
   background-color: #1e1e2f;
 }
-
-
 .bg-dark {
     background-color: #1e1e2f !important;
 }
@@ -104,7 +113,6 @@ a.sidenav-button:hover {
 .navbar .photo img {
     width: 100%;
 }
-
 .ms-5 {
     margin-left: auto !important;
 }

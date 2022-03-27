@@ -1,11 +1,22 @@
-## Adding Bootstrap NavBar in Angular Application
 
-### Bootstrap components
-Built into Bootstrap are a number of reusable elements, conveniently styled out with accompanying JS to easily add components such as navigations, alerts, dropdowns, buttons, responsive tables, lists, responsive media objects, and more! There are over 20 different Bootstrap components that can be found [here](https://getbootstrap.com/docs/5.0/components/navbar/):
+## Bootstrap components
+Built into Bootstrap are a number of reusable elements, conveniently styled out with accompanying JS to easily add components such as navigations, alerts, dropdowns, buttons, responsive tables, lists, responsive media objects, and more! 
+
+There are over 20 different Bootstrap components that can be found [here](https://getbootstrap.com/docs/5.0/components/navbar/):
+
+### NavBar Component - Bootstrap
+
+- #### What is a NavBar?
+A navigation bar is a navigation header that is placed at the top of the page, With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.
+
+- #### How NavBar Works?
+Navbars require a wrapping `.navbar` with `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` for responsive collapsing and color scheme classes.
+
+1. `.navbar` class define the navbar component
+2. `.navbar-expand` class can create navigation bar vertical depending on the screen size
 
 ### About this exercise
-Previously we have installed the bootstrap and fontawesome in our angular application. 
-> If you want to install bootstrap and fontawesome in an angular application you can [Click Here](https://github.com/PatternsTechGit/PT_Fontawesoome_Bootstrap "Click Here").
+Previously we have scaffolded a newly angular application and installed the bootstrap and fontawesome in it.
 
 In this lab we will
 - Use Bootstrap navbar component in Angular application.
@@ -13,24 +24,16 @@ In this lab we will
 
 ------------
 #### Step 1: Generating a new Component
-we will generate a new component in app folder using `ng g c` command named toolbar
+we will generate a new component for our navBar in app folder using `ng g c` command named toolbar
 
 ```typescript
 ng g c toolbar
 ```
 
-![toolbarComponent](https://github.com/PatternsTechGit/PT_AngularCLI/blob/main/images/module_vs_component.png)
+This will also import toolbar component in the declaration array in App Module file.  After that, we have to place the selector of toolbar component in `app.component.html`
 
-#### Step 2: Declaration of Component in App Module
-After creating the component we have to import our component in the declaration array
-
-![appmodule](https://github.com/PatternsTechGit/PT_AngularCLI/blob/main/images/module_vs_component.png)
-
-
-#### Step 3: Placing navbar in App Component
-
-#### Step 4: Desiging Navbar with Bootstrap
-In the `toolbar.component.html` write the following bootstrap code for navBar Component
+#### Step 2: Designing Navbar Template
+In the `toolbar.component.html` write the following HTML code for navBar Component
 
 ```html
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -64,7 +67,7 @@ In the `toolbar.component.html` write the following bootstrap code for navBar Co
 ```
 
 
-#### Step 5: Styling our NavBar
+#### Step 3: Styling our application
 In the `styles.css` in src folder, write the following css code for styling the navbar
 ```css
 html, body { height: 100%; }
@@ -109,3 +112,5 @@ a.sidenav-button:hover {
     margin-left: auto !important;
 }
 ```
+
+#### Step 3: Styling our NavBar

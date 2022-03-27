@@ -8,6 +8,7 @@ a.sidenav-button:hover {
     color: rgba(255, 255, 255, .8);
     transition: all .3s ease 0s;
 }
+/* Used to style profile photo in navbar */
 .navbar .photo {
     display: inline-block;
     height: 30px;

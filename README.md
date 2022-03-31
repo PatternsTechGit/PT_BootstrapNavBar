@@ -90,38 +90,28 @@ In the `toolbar.component.html` write the following HTML code for navBar Compone
 
 
 #### Step 3: Styling our Application
-Before styling anything we should place the style.css file link in bottom least of the`"styles":[ ]` array in `angular.json` file. Then in the `styles.css` in src folder, write the following css code for styling the navbar
+Before styling anything we should place the `style.css` file link in bottom last of the`"styles":[ ]` array in `angular.json` file to give it precedence as Those which come later (also in stylesheets which are loaded later) has a higher specifity.
+
+Then in the `styles.css` in src folder, write the following code for styling our application layout
 
 ```css
-a.sidenav-button {
-    display: inline;
-    color: rgba(255, 255, 255, .5);
-    margin-right: 10px;
-    transition: all .3s ease 0s;
-}
-a.sidenav-button:hover {
-    color: rgba(255, 255, 255, .8);
-    transition: all .3s ease 0s;
-}
-/* Used to style profile photo in navbar */
-.navbar .photo {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    vertical-align: middle;
-    overflow: hidden;
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #525f7f;
+  text-align: left;
+  background-color: #1e1e2f;
 }
 
-.navbar .photo img {
-    width: 100%;
-}
-
-/* Class to align photo icon left in navbar */
-.ml-nav-custom {
-    margin-left: auto !important;
+.bg-dark {
+    background-color: #1e1e2f !important;
 }
 ```
+
 
 #### Step 4: Styling our NavBar Component
 In the `toolbar.component.css` in file, write the following css code for styling the navbar

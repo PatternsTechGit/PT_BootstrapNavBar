@@ -1,13 +1,3 @@
-a.sidenav-button {
-    display: inline;
-    color: rgba(255, 255, 255, .5);
-    margin-right: 10px;
-    transition: all .3s ease 0s;
-}
-a.sidenav-button:hover {
-    color: rgba(255, 255, 255, .8);
-    transition: all .3s ease 0s;
-}
 /* Used to style profile photo in navbar */
 .navbar .photo {
     display: inline-block;
@@ -25,4 +15,15 @@ a.sidenav-button:hover {
 /* Class to align photo icon left in navbar */
 .ml-nav-custom {
     margin-left: auto !important;
+}
+
+a.sidenav-button {
+    display: inline;
+    color: rgba(255, 255, 255, .5);
+    margin-right: 10px;
+    transition: all .3s ease 0s;
+}
+a.sidenav-button:hover {
+    color: rgba(255, 255, 255, .8);
+    transition: all .3s ease 0s;
 }

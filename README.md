@@ -52,7 +52,11 @@ In the `toolbar.component.html` write the following HTML code for navBar Compone
 
       <!-- .navbar-toggler class is used to determine when the content toggles behind a button -->
       <!-- data-bs-target="" used to target the navbar content to collapse/Toggle when matches the content's id="" -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                                                   data-bs-target="#navbarSupportedContent" 
+                                                   aria-controls="navbarSupportedContent" 
+                                                   aria-expanded="false" 
+                                                   aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -63,11 +67,12 @@ In the `toolbar.component.html` write the following HTML code for navBar Compone
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <!-- .navbar-nav class is for full-height and lightweight navigation (including support for dropdowns) -->
-        <ul class="navbar-nav mb-2 mb-lg-0 .ml-nav-custom">
+        <ul class="navbar-nav mb-2 mb-lg-0 ml-nav-custom">
 
           <li class="nav-item dropdown d-flex flex-end">
             
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                                                data-bs-toggle="dropdown" aria-expanded="true">
                 <div class="photo">
                     <img alt="Profile Photo" src="assets/images/profile.jpg" />
                 </div>
@@ -90,53 +95,34 @@ In the `toolbar.component.html` write the following HTML code for navBar Compone
 
 
 #### Step 3: Styling our Application
-Before styling anything we should place the style.css file link in bottom least of the`"styles":[ ]` array in `angular.json` file. Then in the `styles.css` in src folder, write the following css code for styling the navbar
+Before styling anything we should place the `style.css` file link in bottom last of the`"styles":[ ]` array in `angular.json` file to give it precedence as which comes later (also in stylesheets which are loaded later) has a higher specifity.
+
+Then in the `styles.css` in src folder, write the following code for styling our application layout
 
 ```css
-a.sidenav-button {
-    display: inline;
-    color: rgba(255, 255, 255, .5);
-    margin-right: 10px;
-    transition: all .3s ease 0s;
-}
-a.sidenav-button:hover {
-    color: rgba(255, 255, 255, .8);
-    transition: all .3s ease 0s;
-}
-/* Used to style profile photo in navbar */
-.navbar .photo {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    vertical-align: middle;
-    overflow: hidden;
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #525f7f;
+  text-align: left;
+  background-color: #1e1e2f;
 }
 
-.navbar .photo img {
-    width: 100%;
-}
-
-/* Class to align photo icon left in navbar */
-.ml-nav-custom {
-    margin-left: auto !important;
+.bg-dark {
+    background-color: #1e1e2f !important;
 }
 ```
+
 
 #### Step 4: Styling our NavBar Component
 In the `toolbar.component.css` in file, write the following css code for styling the navbar
 
 ```css
-a.sidenav-button {
-    display: inline;
-    color: rgba(255, 255, 255, .5);
-    margin-right: 10px;
-    transition: all .3s ease 0s;
-}
-a.sidenav-button:hover {
-    color: rgba(255, 255, 255, .8);
-    transition: all .3s ease 0s;
-}
+
 /* Used to style profile photo in navbar */
 .navbar .photo {
     display: inline-block;
@@ -155,4 +141,21 @@ a.sidenav-button:hover {
 .ml-nav-custom {
     margin-left: auto !important;
 }
+
+a.sidenav-button {
+    display: inline;
+    color: rgba(255, 255, 255, .5);
+    margin-right: 10px;
+    transition: all .3s ease 0s;
+}
+a.sidenav-button:hover {
+    color: rgba(255, 255, 255, .8);
+    transition: all .3s ease 0s;
+}
+
 ```
+#### toolbar Component Output
+After running the application our responsive navbar component made using bootstrap looks like
+
+![NavBar](https://github.com/PatternsTechGit/PT_AngularCLI/blob/main/images/spa_arch.png)
+

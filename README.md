@@ -95,7 +95,7 @@ In the `toolbar.component.html` write the following HTML code for navBar Compone
 
 
 #### Step 3: Styling our Application
-Before styling anything we should place the `style.css` file link in bottom last of the`"styles":[ ]` array in `angular.json` file to give it precedence as Those which come later (also in stylesheets which are loaded later) has a higher specifity.
+Before styling anything we should place the `style.css` file link in bottom last of the`"styles":[ ]` array in `angular.json` file to give it precedence as which comes later (also in stylesheets which are loaded later) has a higher specifity.
 
 Then in the `styles.css` in src folder, write the following code for styling our application layout
 

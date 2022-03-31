@@ -157,5 +157,5 @@ a.sidenav-button:hover {
 #### toolbar Component Output
 After running the application our responsive navbar component made using bootstrap looks like
 
-![NavBar](https://github.com/PatternsTechGit/PT_AngularCLI/blob/main/images/spa_arch.png)
+![NavBar](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/navBar.png)
 

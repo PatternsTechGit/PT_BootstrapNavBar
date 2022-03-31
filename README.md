@@ -52,7 +52,11 @@ In the `toolbar.component.html` write the following HTML code for navBar Compone
 
       <!-- .navbar-toggler class is used to determine when the content toggles behind a button -->
       <!-- data-bs-target="" used to target the navbar content to collapse/Toggle when matches the content's id="" -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                                                   data-bs-target="#navbarSupportedContent" 
+                                                   aria-controls="navbarSupportedContent" 
+                                                   aria-expanded="false" 
+                                                   aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -67,7 +71,8 @@ In the `toolbar.component.html` write the following HTML code for navBar Compone
 
           <li class="nav-item dropdown d-flex flex-end">
             
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                                                data-bs-toggle="dropdown" aria-expanded="true">
                 <div class="photo">
                     <img alt="Profile Photo" src="assets/images/profile.jpg" />
                 </div>

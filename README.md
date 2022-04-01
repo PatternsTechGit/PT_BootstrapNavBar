@@ -140,8 +140,17 @@ In the `toolbar.component.css` in file, write the following css code for styling
 }
 
 ```
-#### toolbar Component Output
+#### toolbar Component Output on desktop view
 After running the application our responsive navbar component made using bootstrap looks like
 
-![NavBar](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/navBar.png)
+![NavBar](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/navBar-desktop.png)
 
+#### toolbar Component Output on desktop view after expanding dropdown
+The toolbar Component Output on desktop view afterexpanding the dropdown list looks like
+
+![NavBar](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/navBar-desktop-expand.png)
+
+#### toolbar Component Output on mobile view
+The toolbar Component Output on mobile view looks like
+
+![NavBar](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/navBar-mobile.png)

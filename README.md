@@ -14,11 +14,8 @@ Previously we have scaffolded a newly angular application and installed the boot
 In this lab we will
 - Use Bootstrap navbar component in Angular application.
 - Make NavBar responsive and mobile friendly.
-#
-- #### What is a NavBar?
-A navigation bar is a navigation header that is placed at the top of the page, With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.
 
-- #### How NavBar Works?
+#### How NavBar Works?
 Navbar require a wrapping `.navbar` with `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` for responsive collapsing and color scheme classes.
 
 1. `.navbar` class define the navbar's component

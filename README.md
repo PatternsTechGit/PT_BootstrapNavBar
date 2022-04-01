@@ -5,16 +5,8 @@ Built into Bootstrap are a number of reusable elements, conveniently styled out 
 
 There are over 20 different Bootstrap components that can be found [here](https://getbootstrap.com/docs/5.0/components/navbar/):
 
-### NavBar Component - Bootstrap
-
-- #### What is a NavBar?
-A navigation bar is a navigation header that is placed at the top of the page, With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.
-
-- #### How NavBar Works?
-Navbar require a wrapping `.navbar` with `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` for responsive collapsing and color scheme classes.
-
-1. `.navbar` class define the navbar component
-2. `.navbar-expand` class can create navigation bar vertical depending on the screen size
+### Bootstrap's NavBar Component
+Bootstrap's navbar is a responsive navigation header, that Includes support for branding, navigation, and more, including support for collapse plugin.
 
 ### About this exercise
 Previously we have scaffolded a newly angular application and installed the bootstrap and fontawesome in it.
@@ -23,6 +15,14 @@ In this lab we will
 - Use Bootstrap navbar component in Angular application.
 - Make NavBar responsive and mobile friendly.
 
+- #### What is a NavBar?
+A navigation bar is a navigation header that is placed at the top of the page, With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.
+
+- #### How NavBar Works?
+Navbar require a wrapping `.navbar` with `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` for responsive collapsing and color scheme classes.
+
+1. `.navbar` class define the navbar's component
+2. `.navbar-expand` class can create navigation bar vertical depending on the screen size
 ------------
 
 
@@ -95,7 +95,7 @@ In the `toolbar.component.html` write the following HTML code for navBar Compone
 
 
 #### Step 3: Styling our Application
-Before styling anything we should place the `style.css` file link in bottom last of the`"styles":[ ]` array in `angular.json` file to give it precedence as which comes later (also in stylesheets which are loaded later) has a higher specifity.
+Before styling anything we should place the `style.css` file link in bottom last of the`"styles":[ ]` array in `angular.json` file to give it precedence.
 
 Then in the `styles.css` in src folder, write the following code for styling our application layout
 
@@ -140,17 +140,6 @@ In the `toolbar.component.css` in file, write the following css code for styling
 /* Class to align photo icon left in navbar */
 .ml-nav-custom {
     margin-left: auto !important;
-}
-
-a.sidenav-button {
-    display: inline;
-    color: rgba(255, 255, 255, .5);
-    margin-right: 10px;
-    transition: all .3s ease 0s;
-}
-a.sidenav-button:hover {
-    color: rgba(255, 255, 255, .8);
-    transition: all .3s ease 0s;
 }
 
 ```

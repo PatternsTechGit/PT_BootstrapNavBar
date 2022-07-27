@@ -1,21 +1,19 @@
 # Adding Bootstrap NavBar in Angular Application
 
 ## Bootstrap components
-Built into Bootstrap are a number of reusable elements, conveniently styled out with accompanying JS to easily add components such as navigations, alerts, dropdowns, buttons, responsive tables, lists, responsive media objects, and more! 
+Bootstrap is an HTML, CSS and JavaScript framework. Using it, you can easily build mobile-first responsive websites. It offers you plenty of pre-set CSS styling for web elements, including navigation bars. In this tutorial, you will learn how to easily create a basic **Bootstrap responsive navbar**.
 
-There are over 20 different Bootstrap components that can be found [here](https://getbootstrap.com/docs/5.0/components/navbar/):
+There are over 20 different Bootstrap components that can be found [here](https://getbootstrap.com/docs/5.0/components/navbar/)
 
-### Bootstrap's NavBar Component
-Bootstrap's navbar is a responsive navigation header, that Includes support for branding, navigation, and more, including support for collapse plugin.
 
 ### About this exercise
-Previously we have scaffolded a newly angular application and installed the bootstrap and fontawesome in it.
+**Previously** we have scaffolded a newly angular application and installed the bootstrap and fontawesome in it.
 
 In this lab we will
-- Use Bootstrap navbar component in Angular application.
-- Make NavBar responsive and mobile friendly.
+- Use *Bootstrap navbar component* in Angular application.
+- Make NavBar *responsive* and *mobile friendly*.
 
-#### How NavBar Works?
+### How NavBar Works?
 Navbar require a wrapping `.navbar` with `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` for responsive collapsing and color scheme classes.
 
 1. `.navbar` class define the navbar's component
@@ -23,16 +21,17 @@ Navbar require a wrapping `.navbar` with `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` 
 ------------
 
 
-#### Step 1: Generating a new Component
-we will generate a new component for our navBar in app folder using `ng g c` command named toolbar
+### Step 1: Generating a new Component
+We will generate a new component for our NavBar in app folder using `ng g c` command named `toolbar`. For this open terminal and run this command
 
 ```typescript
 ng g c toolbar
 ```
 
-This will also import toolbar component in the declaration array in App Module file.  After that, we have to place the selector of toolbar component in `app.component.html`
+This will also *import toolbar component* in the declaration array in` app.module.ts` file.  
+After that, we have to place the selector `<app-toolbar></app-toolbar>` of toolbar component in `app.component.html`
 
-#### Step 2: Designing Navbar Template
+### Step 2: Designing Navbar Template
 In the `toolbar.component.html` write the following HTML code for navBar Component
 
 ```html
@@ -91,10 +90,9 @@ In the `toolbar.component.html` write the following HTML code for navBar Compone
 ```
 
 
-#### Step 3: Styling our Application
-Before styling anything we should place the `style.css` file link in bottom last of the`"styles":[ ]` array in `angular.json` file to give it precedence.
+### Step 3: Styling our Application
 
-Then in the `styles.css` in src folder, write the following code for styling our application layout
+In the `styles.css` in **src folder** paste the following code for styling our application layout. This is global styling. 
 
 ```css
 html, body { height: 100%; }
@@ -115,8 +113,8 @@ body {
 ```
 
 
-#### Step 4: Styling our NavBar Component
-In the `toolbar.component.css` in file, write the following css code for styling the navbar
+### Step 4: Styling our NavBar Component
+Now we will style our toolbar component. In the `toolbar.component.css` in file paste the following css code for styling the navbar
 
 ```css
 
@@ -140,17 +138,13 @@ In the `toolbar.component.css` in file, write the following css code for styling
 }
 
 ```
-#### toolbar Component Output on desktop view
+## Final Output
 After running the application our responsive navbar component made using bootstrap looks like
 
 ![NavBar](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/navBar-desktop.png)
 
-#### toolbar Component Output on desktop view after expanding dropdown
-The toolbar Component Output on desktop view afterexpanding the dropdown list looks like
-
-![NavBar](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/navBar-desktop-expand.png)
 
 #### toolbar Component Output on mobile view
-The toolbar Component Output on mobile view looks like
+Now if your stretch down your browser or open this application on mobile phone your toolbar component's Output will looks like this. 
 
 ![NavBar](https://github.com/PatternsTechGit/PT_BootstrapNavBar/blob/main/Readme-images/navBar-mobile.png)
